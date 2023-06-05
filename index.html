@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz App</title>
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div  class = "init-box box" >
+            <h3>Quiz App: </h3>
+            <p>Number of questions: <span class = "number-of-questions"></span></p>
+            <button type="button" class = "btn" onclick = "startQuiz()">Start Quiz</button>
+        </div>
+
+        <div class = "quiz-box box hide">
+
+            <div class = question-number></div>
+            <div class = question></div>
+            <div class = options>
+                
+            </div>
+            <div class = next-button>
+                <button type="button" class ="btn" onclick ="nextQuestion()">Next</button>
+            </div>
+            <div class = answer-number>
+            </div>
+
+        </div>
+
+
+        <div class = "final-box box hide">
+            <h1>Result</h1>
+            <table>
+                <tr>
+                    <td>Total Questions:</td>
+                    <td><span class = "total-questions"></span></td>
+                </tr>
+                <tr>
+                    <td>Score:</td>
+                    <td><span class = "score"></span></td>
+                </tr> 
+                <tr>
+                    <td>Percentage:</td>
+                    <td><span class = "percentage"></span></td>
+                </tr>
+                
+            </table>
+            <button type="button" class="btn" onclick = "tryAgain()">Try Again</button>
+            <button type="button" class="btn" onclick = "quit()">Quit</button>
+       
+        </div>
+
+    <script src="questions.js"></script>  
+    <script src="script.js"></script>    
+    
+    </body>
+
+</html>
